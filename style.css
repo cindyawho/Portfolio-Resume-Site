@@ -46,6 +46,10 @@ button {
   border-radius: 5px;
 }
 
+.bottomBorder{
+  border-bottom: 1px solid var(--gray_Background);
+}
+
 /*****************************************************
 --------------------- Nav Bar -------------------------
 *****************************************************/
@@ -288,7 +292,6 @@ button {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
     padding: 35px;
-    border-bottom: 1px solid var(--gray_Background);
   }
   .workTitle{
     font-size: clamp(1.625rem, 1.4485294117647058rem + 0.8823529411764706vw, 2rem);
