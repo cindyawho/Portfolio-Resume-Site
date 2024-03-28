@@ -88,6 +88,10 @@ button {
 /*****************************************************
 --------------------- Hero Section ---------------------
 *****************************************************/
+.centralContent{
+  margin: 0;
+  width: 100%;
+}
 
 .heroWrapper {
   position: relative;
@@ -183,6 +187,7 @@ button {
     top: 0;
     bottom: 0;
     translate: 0% -20px;
+    position: relative;
   }
 
   .heroContent h1{
@@ -198,12 +203,12 @@ button {
   }
   
   .heroDecoration_Icon{
-    width: 64vw;
+    width: 50vw;
     height: auto;
   }
   
   .heroDecoration_Icon svg{
-    width: 64vw;
+    width: 50vw;
     height: auto;
     opacity: 80%;
   }
@@ -214,7 +219,7 @@ button {
   }
   
   .heroButton button{
-    position: relative;
+    position: absolute;
     z-index: 3;
     bottom: 0;
     margin-bottom: 20px;
@@ -226,7 +231,7 @@ button {
 *****************************************************/
 
 .workWrapper{
-  
+  width: 100%;
 }
 
 .workTitle{
@@ -236,28 +241,54 @@ button {
 
 .workDescription{
   text-align: center;
+  color: var(--gray_SubText);
+  line-height: 1.5rem;
 }
 
 .workContent{
-  
+  background-color: var(--white);
+  width: 100%;
+  padding: 10px;
 }
 
 .workJobHeadline{
-  
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  font-size: var(--fs-16);
 }
 
 .workJobDates{
-  
+  text-align: right;
+  margin-inline-end: 10px;
+}
+
+.workJobDates p{
+  background-color: var(--darkGold_Button);
+  display: inline-block;
+  right: 0;
+  left: auto;
+  padding: 5px;
+  color: var(--white);
+  text-align: right;
+  font-size: var(--fs-12);
 }
 
 .workJobDescription{
-  
+  color: var(--gray_SubText);
+  line-height: 1.5rem;
 }
 
 .workJobList{
   
 }
 
+
+@media(min-width: 37.5em){
+  .workContent{
+    display: grid;
+    grid-template-columns: repeat(1, 2fr);
+  }
+}
 /*****************************************************
 --------------------- Info Bar -------------------------
 *****************************************************/
