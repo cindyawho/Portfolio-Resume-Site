@@ -1,0 +1,287 @@
+:root {
+  /* Colors */
+  --white: #FFFFFF;
+  --darkGold_Button: #FFB400;
+  --black_MainText; #2B2B2B;
+  --gray_SubText: #767676;
+  --gray_Background: #F0F0F6;
+  /* Mobile Font Sizes */
+  --fs-24: 1.5rem;
+  --fs-22: 1.375rem;
+  --fs-20: 1.25rem;
+  --fs-18: 1.125rem;
+  --fs-16: 1rem;
+  --fs-14: 0.875rem;
+  --fs-12: 0.75rem;
+  /* Font */
+  --font: "Inter", sans-serif;
+}
+
+html {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  background-color: var(--gray_Background);
+  font-family: var(--font);
+  color: var(--black_MainText);
+}
+
+a:hover circle{
+  fill: var(--darkGold_Button);
+}
+
+button {
+  background-color: var(--darkGold_Button); 
+  border: none;
+  color: var(--black_MainText);
+  padding: 10px 20px;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 5px;
+}
+
+/*****************************************************
+--------------------- Nav Bar -------------------------
+*****************************************************/
+
+.navBarWrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: var(--white);
+  width: 100%;
+  height: 70px;
+  z-index: 10;
+}
+
+.navBarGridIcons{
+  justify-content: space-around;
+  margin: 10px;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+}
+
+/************MEDIA QUERY**************/
+@media (min-width: 600px) {
+  .navBarWrapper {
+    right: 0;
+    left: auto;
+    /* width: 10vw; */
+    width: 70px;
+    height: 100%;
+    margin: auto;
+    justify-content: space-around;
+  }
+  .navBarGridIcons{
+    grid-template-columns: none;
+    grid-template-rows: repeat(6, 1fr);
+    row-gap: calc(100%/6);
+  }
+}
+
+
+/*****************************************************
+--------------------- Hero Section ---------------------
+*****************************************************/
+
+.heroWrapper {
+  position: relative;
+  margin-top: 75px;
+  margin-inline: -7px;
+  padding-block: 0;
+  background-color: var(--white);
+  font-family: "Inter", sans-serif;
+  height: auto;
+  padding: 5px;
+}
+
+.heroDecoration {
+  position: absolute;
+}
+
+.heroDecoration_Icon{
+  position: absolute;
+  top: 0;
+  left: 0;
+  /* for individual circle
+  margin-left: 16px;
+  margin-top: 12px; */
+  z-index: 1;
+}
+
+.heroContent {
+  padding: 24px;
+  /* line-height: 123.6%; */
+  position: relative;
+  z-index: 3;
+}
+
+.heroContent h1{
+  /* font-size: var(--fs-24); */
+  font-size: 1.375rem;
+  font-size: clamp(1.375rem, 1.1607142857142856rem + 1.0714285714285714vw, 1.5625rem);
+  font-weight: 700;
+  max-width: 65vw;
+}
+
+.heroContent_Span {
+  color: var(--darkGold_Button);
+}
+
+.heroContent p{
+  font-weight: 300;
+  /* font-size: var(--fs-14); */
+  font-size: 0.875rem;
+  font-size: clamp(0.875rem, 0.7321428571428572rem + 0.7142857142857143vw, 1rem);
+  color: var(--gray_SubText);
+  text-transform: capitalize;
+  max-width: 55vw;
+}
+
+.heroImage {
+  position: absolute;
+  width: clamp(8.9375rem, 2.008928571428571rem + 34.64285714285714vw, 15rem);
+  height: auto;
+  bottom: 0;
+  right: 0;
+  z-index: 3;
+}
+
+.heroButton{
+  padding: 0;
+  margin-inline-start: 24px;
+  margin-bottom: 16px;
+}
+
+.heroButton button{
+  width: 154px;
+  height: 50px;
+}
+
+/************ HERO MEDIA QUERY **************/
+@media (min-width: 600px){
+  .centralContent{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 22vw;
+    width: 64vw;
+    margin: 0;
+  }
+  
+  .heroWrapper {
+    height: 470px;
+    margin: 0;
+  }
+
+  .heroContent {
+    top: 0;
+    bottom: 0;
+    translate: 0% -20px;
+  }
+
+  .heroContent h1{
+    font-size: 2.5rem;
+    font-size: clamp(2.5rem, 1.75rem + 2vw, 3rem);
+    width: 60%;
+  }
+
+  .heroContent p{
+    font-size: 0.875rem;
+    font-size: clamp(0.875rem, 0.5rem + 1vw, 1.125rem);
+    max-width: 50%;
+  }
+  
+  .heroDecoration_Icon{
+    width: 64vw;
+    height: auto;
+  }
+  
+  .heroDecoration_Icon svg{
+    width: 64vw;
+    height: auto;
+    opacity: 80%;
+  }
+
+  .heroImage {
+    width: clamp(16.875rem, 11.71875rem + 13.750000000000002vw, 20.3125rem);;
+    height: auto;
+  }
+  
+  .heroButton button{
+    position: relative;
+    z-index: 3;
+    bottom: 0;
+    margin-bottom: 20px;
+  }
+}
+
+/*****************************************************
+--------------------- Work History ---------------------
+*****************************************************/
+
+.workWrapper{
+  
+}
+
+.workTitle{
+  text-align: center;
+  /* NEXT STEP: Change font size and font styles */
+}
+
+.workDescription{
+  text-align: center;
+}
+
+.workContent{
+  
+}
+
+.workJobHeadline{
+  
+}
+
+.workJobDates{
+  
+}
+
+.workJobDescription{
+  
+}
+
+.workJobList{
+  
+}
+
+/*****************************************************
+--------------------- Info Bar -------------------------
+*****************************************************/
+
+.infoBarWrapper {
+  position: relative;
+  background-color: var(--white);
+  top:0;
+  margin-inline: -7px;
+  padding-block: 0;
+}
+
+/************ Info Bar Media Query **************/
+@media (min-width: 600px) {
+  .infoBarWrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 20vw;
+    height: 100%;
+  }
+}
+
+
+/*****************************************************
+--------------------- OTHER -------------------------
+*****************************************************/
