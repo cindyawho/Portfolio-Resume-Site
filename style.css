@@ -424,6 +424,44 @@ button {
 }
 
 /*****************************************************
+--------------------- Contact Form --------------------
+*****************************************************/
+.contactWrapper{
+
+}
+
+.contactText{
+
+}
+
+.contactFormWrapper{
+  background-color: var(--white);
+  padding: 25px;
+}
+
+.contactControl{
+  padding-bottom: 25px;
+  margin-right: 25px;
+}
+
+.contactControl label{
+  font-size: var(--fs-16);
+  color: var(--gray_SubText);
+}
+
+.contactControl input, .contactControl textarea{
+  width: 100%;
+  border: none;
+  font-size: var(--fs-16);
+  padding: 10px;
+}
+
+.contactControl button{
+  font-size: var(--fs-14);
+  font-weight: 600;
+}
+
+/*****************************************************
 --------------------- Info Bar -------------------------
 *****************************************************/
 
