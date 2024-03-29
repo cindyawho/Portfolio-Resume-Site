@@ -16,6 +16,8 @@
   --fs-12: 0.75rem;
   /* Font */
   --font: "Inter", sans-serif;
+  /* Transition */
+  --transition: 550ms ease-in-out;
 }
 
 html {
@@ -23,14 +25,23 @@ html {
   width: 100%;
 }
 
-body {
+body, textarea, input {
   background-color: var(--gray_Background);
   font-family: var(--font);
   color: var(--black_MainText);
 }
 
-a:hover circle{
+a svg circle{
+  transition: color var(--transition);
+}
+
+a:hover svg circle{
   fill: var(--darkGold_Button);
+}
+
+a.underline{
+  color: var(--darkGold_Button);
+  /* text-decoration: none; */
 }
 
 button {
@@ -334,6 +345,61 @@ button {
 
 .educationWrapper h3{
   color: #2B2B2B;
+}
+
+/*****************************************************
+--------------------- Portfolio ----------------------
+*****************************************************/
+
+/* Need to create a portfolio bar or dropdown for mobile */
+/* Will eventually be a working selector using javascript */
+.portfolioBar{
+  display: none;
+  /* display: flex; */
+  flex-direction: row;
+  justify-content: center;
+  gap: 35px;
+}
+
+.portfolioProjects{
+
+}
+
+.projectItem{
+  display: grid;
+  justify-content: center;
+  text-align: center;
+}
+
+.projectItem img{
+  width: 77vw;
+  height: auto;
+}
+
+.projectTitle{
+  margin-bottom: 10px;
+}
+
+.projectSkills{
+  background-color: var(--darkGold_Button);
+  display: block;
+  width: fit-content;
+  padding: 5px;
+  color: var(--white);
+  margin: auto;
+  text-align: center;
+  font-size: var(--fs-12);
+}
+
+.projectLinks{
+  padding: 10px;
+  /* display: flex;
+  justify-content: space-between; */
+}
+
+.projectLinks a{
+  margin-left: 15px;
+  margin-right: 15px;
 }
 
 /*****************************************************
