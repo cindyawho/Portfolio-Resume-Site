@@ -449,11 +449,16 @@ button {
   color: var(--gray_SubText);
 }
 
-.contactControl input, .contactControl textarea{
+.contactControl input, 
+.contactControl textarea{
   width: 100%;
   border: none;
   font-size: var(--fs-16);
   padding: 10px;
+}
+
+.contactControl textarea{
+  resize: vertical;
 }
 
 .contactControl button{
