@@ -312,6 +312,9 @@ button {
   }
   .workDescription{
     font-size: var(--fs-18);
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
   }
   .workJobHeadline{
     display: block;
