@@ -206,9 +206,9 @@ button {
     position: absolute;
     top: 0;
     bottom: 0;
-    left: 22vw;
-    width: 64vw;
-    margin: 0;
+    left: 230px;
+    width: auto;
+    margin-right: 110px;
   }
   
   .heroWrapper {
@@ -466,6 +466,13 @@ button {
   font-weight: 600;
 }
 
+@media(min-width: 37.5em){
+  .contactFormWrapper{
+    margin: auto;
+    max-width: 37.5em;
+  }
+}
+
 /*****************************************************
 --------------------- Info Bar -------------------------
 *****************************************************/
@@ -484,7 +491,7 @@ button {
     position: fixed;
     top: 0;
     left: 0;
-    width: 20vw;
+    width: 200px;
     height: 100%;
   }
 }
