@@ -256,11 +256,11 @@ button {
   width: 100%;
 }
 
-.workTitle{
+.sectionTitle{
   text-align: center;
 }
 
-.workDescription{
+.sectionDescription{
   text-align: center;
   color: var(--gray_SubText);
   line-height: 1.5rem;
@@ -307,10 +307,10 @@ button {
     padding: 35px;
     width: auto;
   }
-  .workTitle{
+  .sectionTitle{
     font-size: clamp(1.625rem, 1.4485294117647058rem + 0.8823529411764706vw, 2rem);
   }
-  .workDescription{
+  .sectionDescription{
     font-size: var(--fs-18);
     margin-left: auto;
     margin-right: auto;
@@ -327,6 +327,12 @@ button {
     font-size: var(--fs-18);
   }
 }
+
+/*****************************************************
+--------------------- Education ---------------------
+*****************************************************/
+
+
 /*****************************************************
 --------------------- Info Bar -------------------------
 *****************************************************/
