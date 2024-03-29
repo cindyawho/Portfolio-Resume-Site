@@ -481,8 +481,9 @@ button {
   position: relative;
   background-color: var(--white);
   top:0;
-  margin-inline: -7px;
-  padding-block: 0;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
 }
 
 /************ Info Bar Media Query **************/
@@ -493,7 +494,23 @@ button {
     left: 0;
     width: 200px;
     height: 100%;
+    display: inline-grid;
+    grid-template-columns: none;
+    grid-template-rows: repeat(5, 1fr);
+    justify-items: center;
+    align-items: center;
   }
+  .inforBarHeader h3, .inforBarHeader h4{
+    text-align: center;
+    /* display: grid;
+    justify-items: center;
+    align-items: center;
+    margin: 0 auto; */
+  }
+  .infoBarProfile{
+    /* width: 100px; */
+  }
+
 }
 
 
