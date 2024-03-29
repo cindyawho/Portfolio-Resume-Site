@@ -50,6 +50,15 @@ button {
   border-bottom: 1px solid var(--gray_Background);
 }
 
+.visuallyHidden {
+  position: absolute;
+  left: -10000px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+
 /*****************************************************
 --------------------- Nav Bar -------------------------
 *****************************************************/
