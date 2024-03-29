@@ -362,16 +362,18 @@ button {
 }
 
 .portfolioProjects{
-
+  display: grid;
+  row-gap: 20px;
 }
 
 .projectItem{
   display: grid;
   justify-content: center;
   text-align: center;
+  border-bottom: 3px dotted var(--white);
 }
 
-.projectItem img{
+.projectImage{
   width: 77vw;
   height: auto;
 }
@@ -388,7 +390,7 @@ button {
   color: var(--white);
   margin: auto;
   text-align: center;
-  font-size: var(--fs-12);
+  font-size: var(--fs-14);
 }
 
 .projectLinks{
@@ -400,6 +402,25 @@ button {
 .projectLinks a{
   margin-left: 15px;
   margin-right: 15px;
+}
+
+@media(min-width: 37.5em){
+  .portfolioProjects{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
+  .projectItem{
+    border-bottom: none;
+  }
+  .projectImage{
+    width: 100%;
+    height: auto;
+  }
+  .projectLinks a{
+    margin-left: 5px;
+    margin-right: 5px;
+  }
 }
 
 /*****************************************************
