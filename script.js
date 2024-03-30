@@ -9,3 +9,8 @@ function viewSource(projectIdNumber) {
     sourceId = "source" + projectIdNumber.toString();
     document.getElementById(sourceId).href = updatedURL;
 }
+
+function openPDF(){
+    // window.open(th.href,'_blank');
+    window.open("./assets/CindyAndrade_Resume2024.pdf",'_blank');
+}

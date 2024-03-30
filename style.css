@@ -57,6 +57,12 @@ button {
   border-radius: 5px;
 }
 
+button:hover{
+  background-color: var(--black_MainText);
+  color: var(--darkGold_Button);
+  cursor:pointer;
+}
+
 .bottomBorder{
   border-bottom: 1px solid var(--gray_Background);
 }
@@ -534,6 +540,7 @@ button {
   background-color: var(--darkGold_Button);
   padding: 5px;
   font-size: 12px;
+  color: var(--white);
 }
 .infoBarGeneralInfoDesc{
   display: inline-block;
