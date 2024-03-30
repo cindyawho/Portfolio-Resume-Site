@@ -516,6 +516,24 @@ button {
   width: auto;
 }
 
+.infoBarGeneral{
+  grid-column: 2 / 4;
+  /* display: inline-block; */
+}
+
+.infoBarGeneralInfo{
+  border-bottom: none;
+}
+
+.infoBarGeneralInfoTitle{
+  display: inline-block;
+  background-color: var(--darkGold_Button);
+  padding: 5px;
+}
+.infoBarGeneralInfoDesc{
+  display: inline-block;
+}
+
 /************ Info Bar Media Query **************/
 @media (min-width: 600px) {
   .infoBarWrapper {
@@ -551,6 +569,18 @@ button {
   .infoBarHeaderSocialImage{
   }
 
+  .infoBarGeneral{
+    grid-column: 1 / 2;
+    padding: 15px;
+  }
+
+  .infoBarGeneralInfo{
+  }
+  
+  .infoBarGeneralInfoTitle{
+  }
+  .infoBarGeneralInfoDesc{
+  }
 }
 
 
