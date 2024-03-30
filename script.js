@@ -14,3 +14,7 @@ function openPDF(){
     // window.open(th.href,'_blank');
     window.open("./assets/CindyAndrade_Resume2024.pdf",'_blank');
 }
+
+function hireButton(){
+    window.open("#contact", '_self');
+}
