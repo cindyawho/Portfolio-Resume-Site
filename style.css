@@ -489,6 +489,33 @@ button {
   grid-template-rows: repeat(3, 1fr);
 }
 
+.infoBarHeader{
+  grid-row: 1 / 4;
+  text-align: center;
+  padding: 15px;
+}
+
+.infoBarHeader h4{
+  display: none;
+}
+
+.infoBarHeaderSocial{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: space-around;
+  justify-items: center;
+  border-bottom: none;
+}
+
+.infoBarHeaderSocialLink{
+  width: fit-content;
+}
+
+.infoBarHeaderSocialImage{
+  height: 24px;
+  width: auto;
+}
+
 /************ Info Bar Media Query **************/
 @media (min-width: 600px) {
   .infoBarWrapper {
@@ -497,21 +524,31 @@ button {
     left: 0;
     width: 200px;
     height: 100%;
+    margin-top: 0;
     display: inline-grid;
     grid-template-columns: none;
     grid-template-rows: repeat(5, 1fr);
     justify-items: center;
     align-items: center;
   }
-  .inforBarHeader h3, .inforBarHeader h4{
-    text-align: center;
-    /* display: grid;
-    justify-items: center;
-    align-items: center;
-    margin: 0 auto; */
+
+  .infoBarHeader{
+    grid-row: 1 / 2;
   }
-  .infoBarProfile{
-    /* width: 100px; */
+
+  .infoBarHeader h4{
+    display: visible;
+  }
+  
+  .infoBarHeaderSocial{
+    grid-template-columns: repeat(3, 1fr);
+    padding-bottom: 25px;
+  }
+  
+  .infoBarHeaderSocialLink{
+  }
+  
+  .infoBarHeaderSocialImage{
   }
 
 }
