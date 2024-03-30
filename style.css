@@ -481,13 +481,15 @@ button {
   position: relative;
   background-color: var(--white);
   width: auto;
-  height: 300px;
+  height: auto;
   top:0;
   margin-top: 35px;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(3, 1fr);
+  grid-template-rows: 1fr, 1fr, auto;
 }
+
+/* Info Bar Header */
 
 .infoBarHeader{
   grid-row: 1 / 4;
@@ -516,6 +518,8 @@ button {
   width: auto;
 }
 
+/* Info Bar General */
+
 .infoBarGeneral{
   grid-column: 2 / 4;
   /* display: inline-block; */
@@ -529,10 +533,40 @@ button {
   display: inline-block;
   background-color: var(--darkGold_Button);
   padding: 5px;
+  font-size: 12px;
 }
 .infoBarGeneralInfoDesc{
   display: inline-block;
+  font-size: 12px;
 }
+
+/* Info Bar Languages and Skills */
+.infoBarLanguages{
+  /* border-bottom: 1px solid var(--gray_Background); */
+}
+.infoBarSkillsTitle{
+  font-size: 0.875rem;
+  font-weight: 450;
+}
+.infoBarSkills-Mobile{
+  font-size: .75rem;
+  line-height: 1.5rem;
+  font-weight: 300;
+  color: var(--gray_SubText);
+}
+.infoBarSkills{
+  /* border-bottom: 1px solid var(--gray_Background); */
+}
+
+/* Info Bar Resume Button */
+.infoBarResume{
+  grid-column: 2 / 4;
+}
+.infoBarResumeButton{
+  width: 100%;
+  background-color: var(--darkGold_Button);
+}
+
 
 /************ Info Bar Media Query **************/
 @media (min-width: 600px) {
@@ -562,25 +596,41 @@ button {
     grid-template-columns: repeat(3, 1fr);
     padding-bottom: 25px;
   }
-  
-  .infoBarHeaderSocialLink{
-  }
-  
-  .infoBarHeaderSocialImage{
-  }
 
   .infoBarGeneral{
     grid-column: 1 / 2;
     padding: 15px;
+    border-bottom: 1px solid var(--gray_Background);
   }
 
-  .infoBarGeneralInfo{
+    /* Info Bar Languages and Skills */
+  .infoBarLanguages{
+    border-bottom: 1px solid var(--gray_Background);
+    grid-column: 1;
+    margin: 0;
+    padding: 33px;
   }
-  
-  .infoBarGeneralInfoTitle{
+  .infoBarSkillsTitle{
   }
-  .infoBarGeneralInfoDesc{
+  .infoBarSkills-Mobile{
   }
+  .infoBarSkills{
+    border-bottom: 1px solid var(--gray_Background);
+    grid-column: 1;
+    align-items: center;
+    /* text-align: center; */
+    padding: 33px;
+  }
+
+  /* Info Bar Resume Button */
+  .infoBarResume{ 
+    grid-column: 1;
+  }
+  .infoBarResumeButton{
+    width: 100%;
+    background-color: var(--darkGold_Button);
+  }
+
 }
 
 
