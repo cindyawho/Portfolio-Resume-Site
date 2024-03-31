@@ -19,14 +19,7 @@ function hireButton(){
     window.open("#contact", '_self');
 }
 
-
 function seeMoreLess(thisElem){
-    // console.log(thisElem);
-    // console.log(thisElem.innerText);
-    // // let sibling = document.querySelector(thisElem).previousElementSibling;
-    // // console.log("Sibling is: ");
-    // // console.log(sibling);
-    // console.log(thisElem.previousElementSibling);
     if(thisElem.innerText=="See More..."){
         thisElem.innerText = "See Less...";
         thisElem.previousElementSibling.style.display = "block";
