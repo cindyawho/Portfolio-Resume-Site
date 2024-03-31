@@ -317,9 +317,35 @@ button:hover{
   color: var(--gray_SubText);
   line-height: 1.5rem;
 }
-.seeMoreLess1{
+
+.seeMoreLess{
   display: none;
 }
+.seeFunction{
+  text-align: right;
+  font-style: italic;
+  font-weight: 500;
+  color: var(--black_MainText);
+  padding-right: 24px;
+}
+.seeFunction:hover{
+  cursor: pointer;
+  color: var(--darkGold_Button);
+}
+
+/* ********************************************************* */
+/* ********************************************************* */
+/* ********************************************************* */
+/* ***************            TESTING          ************* */
+/* ********************************************************* */
+/* ********************************************************* */
+/* ********************************************************* */
+/* .Test{
+  display: flex;
+  flex-direction: column-reverse;
+} */
+
+
 
 @media(min-width: 37.5em){
   .workContent{
