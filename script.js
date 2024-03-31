@@ -18,3 +18,37 @@ function openPDF(){
 function hireButton(){
     window.open("#contact", '_self');
 }
+
+
+let checking = true;
+
+function seeMoreLess(idNumber){
+    divName = "seeMoreLess" + idNumber.toString();
+    seeName = "seeFunction" + idNumber.toString();
+    console.log("Element with id " + seeName + " is : ");
+    console.log(document.getElementById(seeName));
+    // console.log("style is : " + document.getElementById(divName).style);
+    // console.log(getComputedStyle(document.getElementById(divName)));
+    // if(checking = true){
+    //     document.getElementById(seeName).innerText = "See Less..."
+    //     console.log(checking);
+    //     checking = false;
+    //     // document.getElementById(divName).style.display = "block";
+    // } else if(checking = false) {
+    //     document.getElementById(seeName).innerText = "See More..."
+    //     console.log(checking);
+    //     checking = true;
+    //     // document.getElementById(divName).style.display = "none";
+    // } else {
+    //     document.getElementById(seeName).innerText = "Nice! You broke the code :D"
+    // }
+    if(document.getElementById(seeName).innerText = "See More..."){
+        document.getElementById(seeName).innerText = "See Less..."
+        // document.getElementById(divName).style.display = "block";
+    } else if(document.getElementById(seeName).innerText = "See Less...") {
+        document.getElementById(seeName).innerText = "See More..."
+        // document.getElementById(divName).style.display = "none";
+    } else {
+        document.getElementById(seeName).innerText = "Nice! You broke the code :D"
+    }
+}

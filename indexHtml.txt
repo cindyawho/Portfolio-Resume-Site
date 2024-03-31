@@ -1,3 +1,10 @@
+
+
+
+<!-- Alternatively, you can go to my website, right click on the screen and select "View Source Code" -->
+
+
+
 <!DOCTYPE html>
 <html>
 
@@ -319,7 +326,7 @@
             <p>As a teacher I...</p>
             <ul class="workJobList">
               <li>Encourage partner discussions and check-ins while maintaining and encouraging a positive learning environment.</li>
-              <span class="seeMoreLess1" style="display: none;">
+              <span class="seeMoreLess">
                 <li>Utilize various online learning platforms to enhance the learning of my students. Platforms include IXL, iReady, and Class Dojo. </li>
                 <li> Participated in the IB Authorization Team to provide support, discuss ideas, mentor teachers, plan IB-focused unit plans, and mentor 10th grade students with their IB personal projects. </li>
                 <li>Was a member of the WASC Writing Committee, where I updated sections of the WASC report in preparation for the Accreditation visit, gathered information from other school stakeholders, and revised the final report. </li>
@@ -328,9 +335,6 @@
                 <li>Fundraised over $1000 for four different projects through DonorsChoose for calculators, student whiteboards, and art supplies for a Calculus Project.</li>
                 <li>Led math department meetings at my past school.</li>
               </span>
-              <div class="seeFunction">
-                <a id="seeFunction1" onclick="seeMoreLess(1)">See More...</a>
-              </div>
             </ul>
           </div>
         </div>
@@ -485,11 +489,11 @@
         <div class="projectItem">
           <img src="./assets/portfolioProjects/cindyPortfolio.png" alt="screenshot of this portfolio website" class="projectImage"/>
           <h3 class="projectTitle">Cindy's Portfolio Website</h3>
-          <p class="projectSkills">Skills Used: HTML, CSS and Javascript</p>
+          <p class="projectSkills">Skills Used: HTML and CSS</p>
           <div class="projectLinks">
             <a id="project1" href="./index.html" class="underline">View Project</a>
-            <a id="source1" href="./indexHtml.txt" class="underline" target="_blank">View Code</a>
-            <!-- <a id="source1" href="" class="underline" target="_blank" onclick="viewSource(1)">View Code</a> -->
+            <a id="source1" href="" class="underline" target="_blank">View Code</a>
+            <a id="source1" href="" class="underline" target="_blank" onclick="viewSource(1)">View Code</a>
             <!-- Figure out view source code, maybe Javascript?: "view-source:"+"./projectsCode/singlePagePortfolio/index.html" -->
           </div>
         </div>
