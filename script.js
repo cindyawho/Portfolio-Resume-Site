@@ -19,10 +19,12 @@ function hireButton(){
     window.open("#contact", '_self');
 }
 
+
+// See More/ See Less selectors on website function
 let seeFunctionDivs = document.querySelectorAll('.seeFunction');
-console.log(seeFunctionDivs);
+// console.log(seeFunctionDivs);
 for (const div of seeFunctionDivs) {
-    console.log(div);
+    // console.log(div);
     div.addEventListener('click', () => {
         if(div.innerText=="See More..."){
             div.innerText = "See Less...";
@@ -35,3 +37,71 @@ for (const div of seeFunctionDivs) {
         }
     })
 }
+
+console.log(document.getElementById('changeContrast'));
+document.getElementById('changeContrast').addEventListener('click', () => {
+    event.preventDefault(); //prevents the random refreshing of page
+    // console.log("IM HEREEEEEE");
+    // changeBGColor();
+    let changeBackgroundDivs = document.querySelectorAll('.changeBackground');
+    // console.log("The divs that were retrieved are");
+    // console.log(changeBackgroundDivs);
+    for(const div of changeBackgroundDivs) {
+        // console.log(div);
+        // console.log("function changeColor was called");
+        if(div.style.backgroundColor != "black"){
+            div.style.backgroundColor = "black";
+        } else if(div.style.backgroundColor == "black") {
+            div.style.backgroundColor = "white";
+        } else {
+            div.style.backgroundColor = "lightBlue";
+        }
+    }
+
+    let changeFontColorDivs = document.querySelectorAll('.changeFontColor');
+    for(const div of changeFontColorDivs) {
+        console.log(div);
+        console.log("function changeColor was called");
+        console.log(div.style.color);
+        if(div.style.color == '#2B2B2B'){
+            div.style.color = "white";
+        } else if(div.style.backgroundColor == "white") {
+            div.style.color = '#2B2B2B';
+        } else {
+            div.style.color = "red";
+        }
+    }
+
+})
+
+// function changeBGColor(){
+//     let changeBackgroundDivs = document.querySelectorAll('.changeBackground');
+//     for(const div of changeBackgroundDivs) {
+//         console.log(div);
+//         console.log("function changeColor was called");
+//         if(div.style.backgroundColor != "black"){
+//             div.style.backgroundColor = "black";
+//         } else if(div.style.backgroundColor == "black") {
+//             div.style.backgroundColor = "white";
+//         } else {
+//             div.style.backgroundColor = "lightBlue";
+//         }
+//     }
+// }
+
+//Contrast Color button on website function
+//THIS WORKS!!
+// let changeBackgroundDivs = document.querySelectorAll('.changeBackground');
+// console.log("The divs that were retrieved are");
+// console.log(changeBackgroundDivs);
+// for(const div of changeBackgroundDivs) {
+//     console.log(div);
+//     div.addEventListener('click', () => {
+//         console.log("function changeColor was called");
+//         if(div.style.backgroundColor != "black"){
+//             div.style.backgroundColor = "black";
+//         } else {
+//             div.style.backgroundColor = "white";
+//         }
+//     })
+// }
