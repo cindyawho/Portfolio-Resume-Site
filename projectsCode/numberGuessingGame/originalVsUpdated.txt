@@ -1,0 +1,48 @@
+The original number guessing game had everything done in the console. With memory of the game saved only on the console. 
+
+What I would like to do is...
+    - have the game playable on the user's website home screen
+    - create instructions on the home screen so players know that it is a 2 person game
+    - create a leaderboard with the top 10 high scores
+    - create a mode where the computer chooses a random number and the user must guess it
+
+Original Code: 
+function playGuessingGame(numToGuess, totalGuesses){
+    let playerInput = prompt("Enter a number between 1 and 100.");
+    
+    if(playerInput === null || playerInput === undefined){ //moved this before other pieces of code.
+        return 0;
+    }
+    
+    if(totalGuesses === undefined){
+        totalGuesses = 10;
+    }
+    let originalGuess = totalGuesses;
+
+
+    while(totalGuesses > 0){
+        if(playerInput === null || playerInput === undefined){ //moved this before other pieces of code.
+            return 0;
+        }
+        if(isNaN(playerInput)){
+            playerInput = prompt("Please enter a number.");
+            continue;
+        }
+        else if(playerInput < numToGuess){
+            playerInput = prompt(playerInput + " is too small. Guess a larger number.");
+            totalGuesses--;
+            continue;
+        }
+        else if(playerInput > numToGuess){
+            playerInput = prompt(playerInput + " is too large. Guess a smaller number.");
+            totalGuesses--;
+            continue;
+        }
+        else if(playerInput == numToGuess){
+            totalGuesses--;
+            return originalGuess - totalGuesses;
+        }
+    }
+
+    return 0;  
+}
