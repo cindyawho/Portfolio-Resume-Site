@@ -38,3 +38,4 @@ function playGuessingGame(numToGuess, totalGuesses){
     return 0;
     
 }
+

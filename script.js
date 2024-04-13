@@ -38,7 +38,7 @@ for (const div of seeFunctionDivs) {
     })
 }
 
-console.log(document.getElementById('changeContrast'));
+// console.log(document.getElementById('changeContrast'));
 document.getElementById('changeContrast').addEventListener('click', () => {
     event.preventDefault(); //prevents the random refreshing of page
     // console.log("IM HEREEEEEE");
@@ -60,16 +60,25 @@ document.getElementById('changeContrast').addEventListener('click', () => {
 
     let changeFontColorDivs = document.querySelectorAll('.changeFontColor');
     for(const div of changeFontColorDivs) {
-        console.log(div);
-        console.log("function changeColor was called");
-        console.log(div.style.color);
+        // console.log(div);
+        // console.log("function changeColor was called");
+        // console.log(div.style.color);
         if(div.style.color == '#2B2B2B'){
             div.style.color = "white";
-        } else if(div.style.backgroundColor == "white") {
+        } else if(div.style.color == "white") {
             div.style.color = '#2B2B2B';
         } else {
-            div.style.color = "red";
+            div.style.color = "white";
         }
+    }
+
+    let bodyBg = window.getComputedStyle(document.body).backgroundColor;
+    if(bodyBg == "#F0F0F6"){
+        bodyBg = "#767676";
+    } else if(bodyBg == "#767676"){
+        bodyBg = "#F0F0F6";
+    } else {
+        bodyBg = "black";
     }
 
 })
